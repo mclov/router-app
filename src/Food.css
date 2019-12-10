@@ -1,0 +1,10 @@
+.Food {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Food img {
+  width: 60%;
+  margin: 2em auto;
+}
