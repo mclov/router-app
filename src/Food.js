@@ -3,6 +3,14 @@ import { Redirect } from 'react-router-dom';
 import './Food.css';
 
 export class Food extends Component {
+  constructor(props) {
+    super(props);
+    this.handleBack = this.handleBack.bind(this);
+  }
+
+  handleBack() {
+    this.props.history.goBack();
+  }
 
   render() {
     const name = this.props.match.params.name
