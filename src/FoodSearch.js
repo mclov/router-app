@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './FoodSearch.css';
 
 export class FoodSearch extends Component {
   constructor(props) {
@@ -16,16 +18,20 @@ export class FoodSearch extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='FoodSearch'>
         <h1>Search For A Food</h1>
-        <input
-          type='text'
-          placeholder='search for a food'
-          name='query'
-          value={this.state.query}
-          onChange={this.handleChange}
-        />
-      </div>
+        <div className='search-area'>
+          <input
+            className='search-box'
+            type='text'
+            placeholder='Search for a type of food'
+            name='query'
+            value={this.state.query}
+            onChange={this.handleChange}
+          />
+          <Link className='search-button' to={`/food/${this.state.query}`} >Go</Link>
+        </div>
+      </div >
     )
   }
 }

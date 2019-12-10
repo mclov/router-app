@@ -1,0 +1,32 @@
+.FoodSearch {
+  margin-top: 30vh;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.search-box {
+  padding: 0.4em;
+  width: 30%;
+  color: darkslategray;
+  font-size: 1em;
+}
+
+.search-button {
+  text-decoration: none;
+  margin: 0 1em;
+  background-color: darkgreen;
+  padding: 0.2em 1em;
+  color: #eee;
+  border-radius: 10%;
+  font-size: 1.2em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.search-button:hover {
+  background-color: seagreen;
+}
