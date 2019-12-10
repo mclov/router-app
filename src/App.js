@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App" >
         <Switch>
+          <Route exact path='/' render={() => <h1>Home Page</h1>} />
           <Route exact path='/food/:name' render={(routeParams) => <Food {...routeParams} />} />
           <Route render={() => <h1>404 Page Not Found</h1>} />
         </Switch>
